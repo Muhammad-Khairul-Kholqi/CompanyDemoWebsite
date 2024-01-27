@@ -1,0 +1,114 @@
+/* open sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+/* robot slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* css navbar */
+.navbar {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 700px) {
+    .logo-navbar {
+        padding: 10px 5%;
+    }
+}
+
+@media (max-width: 545px) {
+    .navbar {
+        gap: 20px;
+        margin-top: -1px;
+        margin-top: 10px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 440px) {
+    .navbar {
+        gap: 15px;
+    }
+    
+    .logo img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    #hamburger-menu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .logo-navbar .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 150px;
+        height: 220px;
+        transition: 0.3s;
+        border-top: 3px solid blue;
+        margin-top: -1px;
+    }
+
+    .logo-navbar .navbar.active {
+        right: 0;
+    }
+
+    .navbar {
+        color: black;
+        display: block;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .navbar a:hover {
+        margin-top: 20px;
+    }
+
+    .logo-navbar .navbar a::after {
+        transform-origin: 0 0;
+    }
+
+    .logo-navbar .navbar a:hover::after {
+        transform: scaleX(0.2);
+    }
+
+    .service,
+    .demo,
+    .testi,
+    .contact {
+        margin-top: 20px;
+    }
+}
+
+/* css content */
+.trusted {
+    font-family: 'Inter',
+    sans-serif;
+}
+
+.long-text {
+    font-family: 'Roboto Slab',
+    serif;
+}
+
+.penjelasan {
+    font-family: 'Inter',
+    sans-serif;
+}
+
