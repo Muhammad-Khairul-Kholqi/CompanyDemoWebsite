@@ -43,7 +43,9 @@
             <h1 class="title-head text-[35px] font-bold" data-aos="fade-down" data-aos-duration="1500">Modern Marketing <br> requires a Business Website</h1>
             <p class="title-desc text-[18px] mt-[10px]" data-aos="fade-down" data-aos-duration="1000">In the Digital Era, a Business Website is essential for success in modern marketing and global competition.</p>
             <a href="">
-                <button class="p-[7px] text-white mt-[20px] rounded-[5px] bg-[#515151] hover:bg-neutral-700" data-aos="zoom-in" data-aos-duration="1000">Get Started<i class="bi bi-arrow-right"></i></button>
+                <button class="p-[7px] text-white mt-[20px] rounded-[5px] bg-[#515151] hover:bg-neutral-700" data-aos="zoom-in" data-aos-duration="1000">
+                    Get Started <i class="bi bi-arrow-right"></i>
+                </button>
             </a>
         </div>
 
@@ -53,7 +55,68 @@
             </div>
         </div>
     </div>
-   
+
+    <div class="content-card flex flex-wrap justify-center gap-[30px] mt-[50px] px-[50px]">
+        <div class="card bg-neutral-100 py-[30px] px-[50px] rounded-[10px]" data-aos="zoom-out" data-aos-duration="1500">
+            <div class="icon-title flex gap-[10px]">
+                <div class="icon bg-red-200 px-[7px] rounded-[5px]" data-aos="zoom-in" data-aos-duration="2000">
+                    <i class="bi bi-puzzle-fill text-red-600 text-[25px]" data-aos="zoom-in" data-aos-duration="1500"></i>
+                </div>
+                <div class="title mt-[5px] text-[20px]" data-aos="fade-down" data-aos-duration="1000">
+                    <h1>Our Clients</h1>
+                </div>
+            </div>
+            <div class="desc-card w-[200px] mt-[10px]" data-aos="fade-up" data-aos-duration="2000">
+                <p>The following is the number of clients we have served.</p>
+            </div>
+            <div class="jumlah-view flex justify-between mt-[10px]" data-aos="zoom-in-up">
+                <h1 class="bg-neutral-700 px-[7px] py-[2px] rounded-[3px] text-white">12</h1>
+                <a href="">
+                    <button class="border-solid border-2 border-neutral-700 rounded-[5px] px-[10px] hover:bg-neutral-700 hover:text-white hover:bg-neutral-700 hover:text-white">View</button>
+                </a>
+            </div>
+        </div>
+        <div class="card bg-neutral-100 py-[30px] px-[50px] rounded-[10px]" data-aos="zoom-out" data-aos-duration="1500">
+            <div class="icon-title flex gap-[10px]">
+                <div class="icon bg-blue-200 px-[7px] rounded-[5px]" data-aos="zoom-in" data-aos-duration="2000">
+                    <i class="bi bi-star-fill text-blue-600 text-[25px]" data-aos="zoom-in" data-aos-duration="1500"></i>
+                </div>
+                <div class="title mt-[5px] text-[20px]" data-aos="fade-down" data-aos-duration="1000">
+                    <h1>Client Ratings</h1>
+                </div>
+            </div>
+            <div class="desc-card w-[200px] mt-[10px]" data-aos="fade-up" data-aos-duration="2000">
+                <p>This is the reting that the client gave us.</p>
+            </div>
+            <div class="jumlah-view flex justify-between mt-[10px]" data-aos="zoom-in-up">
+                <h1 class="bg-neutral-700 px-[7px] py-[2px] rounded-[3px] text-white">4.8</h1>
+                <a href="">
+                    <button class="border-solid border-2 border-neutral-700 rounded-[5px] px-[10px] hover:bg-neutral-700 hover:text-white">View</button>
+                </a>
+            </div>
+        </div>
+        <div class="card bg-neutral-100 py-[30px] px-[50px] rounded-[10px]" data-aos="zoom-out" data-aos-duration="1500">
+            <div class="icon-title flex gap-[10px]">
+                <div class="icon bg-green-200 px-[7px] rounded-[5px]" data-aos="zoom-in" data-aos-duration="2000">
+                    <i class="bi bi-bag-heart-fill text-green-600 text-[25px]" data-aos="zoom-in" data-aos-duration="1500"></i>
+                </div>
+                <div class="title mt-[5px] text-[20px]" data-aos="fade-down" data-aos-duration="1000">
+                    <h1>Our Sponsor</h1>
+                </div>
+            </div>
+            <div class="desc-card w-[200px] mt-[10px]" data-aos="fade-up" data-aos-duration="2000">
+                <p>These are the sponsors we work with.</p>
+            </div>
+            <div class="jumlah-view flex justify-between mt-[10px]" data-aos="zoom-in-up">
+                <h1 class="bg-neutral-700 px-[7px] py-[2px] rounded-[3px] text-white">10</h1>
+                <a href="">
+                    <button class="border-solid border-2 border-neutral-700 rounded-[5px] px-[10px] hover:bg-neutral-700 hover:text-white">View</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <h1 class="mt-[200px]"></h1>
+
     <script src="script.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -206,6 +269,13 @@
 
     button {
         font-size: 9px;
+    }
+}
+
+/* css card */
+@media (max-width: 400px) {
+    .card {
+        padding: 20px 30px;
     }
 }
 
