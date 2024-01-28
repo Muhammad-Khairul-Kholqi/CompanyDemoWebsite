@@ -6,57 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/styleHome.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="img/logo-border.png">
     <title>Jasa Buat Website</title>
 </head>
 
 <body>
-    <div class="logo-navbar flex justify-between py-[10px] px-[10%] shadow top-[0] left-[0] right-[0] fixed bg-white">
-        <div class="logo w-[60px]">
+    <div class="logo-navbar flex justify-between py-[10px] px-[10%] shadow top-[0] left-[0] right-[0] fixed bg-white z-[999]">
+        <div class="logo w-[60px] grayscale">
             <a href=""><img src="img/logo.png" alt="Penyedia jasa membuat website UMKM dan Portfolio" draggable="false"></a>
         </div>
         <div class="navbar flex gap-[25px] mt-[15px]">
             <div class="home">
-                <a href="" class="hover:text-blue-500">Home</a>
+                <a href="" class="hover:text-neutral-700">Home</a>
             </div>
             <div class="service">
-                <a href="" class="hover:text-blue-500">Services</a>
+                <a href="" class="hover:text-neutral-700">Services</a>
             </div>
             <div class="demo">
-                <a href="" class="hover:text-blue-500">Demo</a>
+                <a href="" class="hover:text-neutral-700">Demo</a>
             </div>
             <div class="testi">
-                <a href="" class="hover:text-blue-500">Testimonial</a>
+                <a href="" class="hover:text-neutral-700">Testimonial</a>
             </div>
             <div class="contact">
-                <a href="" class="hover:text-blue-500">Contact</a>
+                <a href="" class="hover:text-neutral-700">Contact</a>
             </div>
         </div>
         <div class="hamburger-menu text-black text-[20px] hidden" id="hamburger-menu">
             <i class="bi bi-list"></i>
         </div>
     </div>
-    <div class="content-animasi flex flex-wrap justify-between py-[100px] px-[10%]">
-        <div class="text-content mt-[50px] mr-[30px]">
-            <h3 class="trusted text-orange-500 text-[18px]">100% Trusted</h3>
-            <h1 class="long-text font-bold text-[30px]">
-                <span class="text-blue-800">Modern Marketing</span><br>
-                <span class="rounded-[5px]">requires a</span>
-                <span class="text-blue-800">Business Website</span>
-            </h1>
-            <p class="penjelasan mt-[10px] text-[15px]">
-                In the Digital Era, a Business Website is essential for <br>
-                success in modern marketing and global competition.</p>
-            <a href=""> 
-                <button class="mt-[20px] bg-orange-500 text-white p-[6px] rounded-[5px] hover:bg-orange-600" type="button" class="">Get Started</button>
+
+    <div class="head-content px-[5%]">
+        <div class="title-teks mt-[100px] text-center">
+            <h1 class="title-head text-[35px] font-bold">Modern Marketing <br> requires a Business Website</h1>
+            <p class="title-desc text-[18px] mt-[10px]"> In the Digital Era, a Business Website is essential for success in modern
+                marketing and global competition.</p>
+            <a href="">
+                <button class="p-[7px] text-white mt-[20px] rounded-[5px] bg-[#515151] hover:bg-neutral-700">Get Started
+                    <i class="bi bi-arrow-right"></i></button>
             </a>
         </div>
-        <div class="animasi w-[450px] mt-[20px] ml-[30px]">
-            <img src="img/ilustrasi.jpg" alt="" draggable="false">
+
+        <div class="ilustrasi flex justify-center mt-[30px]">
+            <div class="ilustrasi grayscale	w-[600px]">
+                <img src="img/ilustrasi.jpg" alt="">
+            </div>
         </div>
     </div>
+   
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
 </body>
 <style>
 /* open sans */
@@ -122,7 +128,7 @@
         width: 150px;
         height: 220px;
         transition: 0.3s;
-        border-top: 3px solid blue;
+        border-top: 3px solid #515151;
         margin-top: -1px;
     }
 
@@ -158,19 +164,51 @@
 }
 
 /* css content */
-.trusted {
-    font-family: 'Inter',
-    sans-serif;
+@media (max-width: 570px) {
+    .title-head {
+        font-size: 30px;
+    }
+
+    .title-desc {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 13px;
+    }
 }
 
-.long-text {
-    font-family: 'Roboto Slab',
-    serif;
+@media (max-width: 445px) {
+    .title-head {
+        font-size: 25px;
+    }
+
+    .title-desc {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 11px;
+    }
 }
 
-.penjelasan {
-    font-family: 'Inter',
-    sans-serif;
+@media (max-width: 365px) {
+    .head-content {
+        margin-top: -20px;
+    }
+
+    .title-head {
+        font-size: 20px;
+    }
+
+    .title-desc {
+        font-size: 11px;
+    }
+
+    button {
+        font-size: 9px;
+    }
 }
 
 
